@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages {
-        stage('Git Cloning') {
+        stage ('Git Cloning') {
             steps {
                 echo "this stage is for git cloning"
             }
