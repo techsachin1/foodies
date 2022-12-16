@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Project execution') {
             steps {
-                sh '''sudo apt update -y''' 
+                sudo apt update -y 
                 echo "repo updated"
             }
         }
