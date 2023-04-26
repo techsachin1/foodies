@@ -1,16 +1,21 @@
-pipeline{
-    agent any
+pipeline {
+    agent any 
     stages {
-        stage('cloning project') {
+        stage ('code checkout') {
             steps {
-                echo "this stage is for git cloning"
+                echo "code pull from repo"
             }
         }
-        stage('Project execution') {
+        stage ('build') {
             steps {
-                sudo apt update -y 
-                echo "repo updated"
+                echo "build project"
             }
         }
+
+
+
     }
+
+
+
 }
