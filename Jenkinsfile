@@ -6,7 +6,7 @@ pipeline {
                 echo "code pull from repo"
             }
         }
-        stage ('build') {
+        stage ('build1') {
             steps {
                 echo "build project"
             }
